@@ -8,13 +8,17 @@
   --mainGreen: #4caf50;
 }
 * {
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 body {
   background: var(--mainGrey);
   color: var(--mainBlack);
   font-family: "Roboto", sans-serif;
+  /* margin: 0;
+  padding: 0; */
 }
 h1 {
   text-align: center;
@@ -24,20 +28,30 @@ h1 {
   letter-spacing: 5px;
 }
 .App {
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 90%;
+  margin: 250px ;
   background: var(--mainWhite);
   padding-bottom: 2rem;
   border-radius: 2px;
+
 }
+.ExpenseForm{
+  width:  600px;
+  height: 500px;
+}
+
+
 .form-center {
-  display: flex;
-  padding: 0 1rem;
+  padding: 2 2rem;
+  top: 50%;
+  left: 50%;
+
 }
 .form-group {
-  padding: 1rem 0.75rem;
-  flex: 0 0 50%;
+  padding: 2rem 3rem;
+  flex: 0 0 20%;
+  top: 50%;
+  left: 50%;
+
 }
 label {
   display: block;
@@ -113,7 +127,7 @@ label {
   justify-content: space-between;
 }
 .expense {
-  margin-right: 2rem;
+  margin-right: rem;
   text-transform: capitalize;
 }
 .amount {
@@ -184,4 +198,50 @@ label {
   .info {
     flex: 0 0 50%;
   }
+}
+
+
+
+
+.Sidebar{
+  height: 50px;
+  width: 250px;
+  background-color: #2F4050;
+}
+
+.SiberList{
+  height: auto;
+  padding:0;
+  width: 100%;
+}
+.SidebarList .row{
+  height: 60px;
+  width: 100%;
+  border: 1px solid black;
+  list-style-type: none;
+margin:0%;
+display: flex;
+flex-direction: row;
+color: white;
+justify-content: center;
+align-items: center;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+.row #icon {
+  flex:30%;
+  display: grid;
+  place-items: center;
+}
+
+.row #title{
+  flex: 70%;
+}
+.SidebarList .row:hover{
+  cursor: pointer;
+  background-color: #293846
+}
+.SidebarList .row #activve{
+  background-color: #293846
+
 }
